@@ -26,4 +26,14 @@ public class BubbleSortTest
         int[] expectedList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         assertArrayEquals(list, expectedList);
     }
+
+    @Test
+    public void shouldKeepSortedList()
+    {
+        int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        BubbleSort bubbleSort = new BubbleSort(list);
+        bubbleSort.sort();
+        int[] expectedList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        assertArrayEquals(list, expectedList);
+    }
 }
