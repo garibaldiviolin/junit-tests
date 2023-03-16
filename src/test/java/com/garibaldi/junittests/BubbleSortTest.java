@@ -1,6 +1,7 @@
 package com.garibaldi.junittests;
 
 import static org.junit.Assert.assertArrayEquals;
+
 import com.garibaldi.junittests.BubbleSort;
 import org.junit.Test;
 
