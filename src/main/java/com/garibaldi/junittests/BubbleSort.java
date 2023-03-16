@@ -15,7 +15,7 @@ public class BubbleSort {
         for (int i = 0; i < this.list.length; i++) {
             for (int j = i + 1; j < this.list.length; j++) {
                 if (this.list[j] < this.list[i]) {
-                    int aux = j;
+                    int aux = list[j];
                     this.list[j] = this.list[i];
                     this.list[i] = aux;
                 }
