@@ -13,7 +13,7 @@ public class BinarySearch {
         }
 
         int start = 0, end = array.length - 1, position = (end + start) / 2;
-        while (start != position && end != position) {
+        while (end >= start) {
             if (array[start] == number)
                 return start;
             if (array[end] == number)
@@ -23,9 +23,9 @@ public class BinarySearch {
                 return position;
 
             if (number < array[position])
-                end = position;
+                end = position - 1;
             else
-                start = position;
+                start = position + 1;
             position = (end + start) / 2;
         }
         System.out.println(number + ", " + start + ", " + position + ", " + end);
