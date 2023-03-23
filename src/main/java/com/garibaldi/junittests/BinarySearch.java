@@ -28,7 +28,6 @@ public class BinarySearch {
                 start = position + 1;
             position = (end + start) / 2;
         }
-        System.out.println(number + ", " + start + ", " + position + ", " + end);
 
         return -1;
 
