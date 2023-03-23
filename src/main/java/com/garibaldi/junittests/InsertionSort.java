@@ -3,11 +3,11 @@ package com.garibaldi.junittests;
 import java.util.List;
 
 
-public class BubbleSort {
+public class InsertionSort {
 
     int[] list;
 
-    public BubbleSort(int[] list) {
+    public InsertionSort(int[] list) {
         this.list = list;
     }
 
