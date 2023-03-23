@@ -8,7 +8,13 @@ public class BinarySearchTest {
 
     @Test
     public void shouldFindAllArrayElements() {
-        int[] array = {15, 16, 17, 18, 19, 20};
+        int[] array = new int[40];
+        int initialValue = 32;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = initialValue;
+            initialValue++;
+        }
+
         for (int expectedPosition = 0; expectedPosition < array.length; expectedPosition++) {
             int number = array[expectedPosition];
             int position = BinarySearch.search(array, number);
