@@ -15,12 +15,13 @@ public class BreadthFirstSearchTest {
     public void shouldFindPath() {
         HashMap<String, String[]> graph = new HashMap<String, String[]>();
         graph.put("A", new String[]{"B"});
-        graph.put("B", new String[]{"C"});
-        graph.put("C", new String[]{});
+        graph.put("B", new String[]{"C", "D"});
+        graph.put("C", new String[]{"D"});
+        graph.put("D", new String[]{"C"});
 
         ArrayList<String> expectedPath = new ArrayList<String>(
-            Arrays.asList("A", "B", "C"));
-        ArrayList<String> path = BreadthFirstSearch.search("A", "C", graph);
+            Arrays.asList("A", "B", "D"));
+        ArrayList<String> path = BreadthFirstSearch.search("A", "D", graph);
         assertEquals(path, expectedPath);
     }
 
