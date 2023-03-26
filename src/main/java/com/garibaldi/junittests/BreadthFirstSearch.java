@@ -10,9 +10,8 @@ public class BreadthFirstSearch {
 
     public static ArrayList<String> search(String startNode, String endNode, HashMap<String, String[]> graph) throws NullPointerException {
 
-        if (graph == null) {
+        if (graph == null)
             throw new NullPointerException("Graph pointer is null.");
-        }
 
         ArrayList<String> path = new ArrayList<String>();
         Stack<String> nextNodes = new Stack<String>();
