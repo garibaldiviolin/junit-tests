@@ -8,10 +8,13 @@ import java.util.Collections;
 
 public class BreadthFirstSearch {
 
-    public static ArrayList<String> search(String startNode, String endNode, HashMap<String, String[]> graph) throws NullPointerException {
+    public static ArrayList<String> search(String startNode, String endNode, HashMap<String, String[]> graph) throws NullPointerException, EmptyGraphException {
 
         if (graph == null)
             throw new NullPointerException("Graph pointer is null.");
+
+        if (graph.size() == 0)
+            throw new EmptyGraphException("Graph has no nodes.");
 
         ArrayList<String> path = new ArrayList<String>();
         Stack<String> nextNodes = new Stack<String>();
