@@ -2,7 +2,6 @@ package com.garibaldi.junittests;
 
 import static org.junit.Assert.assertArrayEquals;
 
-import com.garibaldi.junittests.InsertionSort;
 import org.junit.Test;
 
 public class InsertionSortTest 

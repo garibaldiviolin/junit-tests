@@ -1,8 +1,5 @@
 package com.garibaldi.junittests;
 
-import java.util.List;
-
-
 public class InsertionSort {
 
     int[] list;

@@ -2,12 +2,9 @@ package com.garibaldi.junittests;
 
 import static org.junit.Assert.assertEquals;
 
-import com.garibaldi.junittests.BreadthFirstSearch;
-import com.garibaldi.junittests.EmptyGraphException;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
