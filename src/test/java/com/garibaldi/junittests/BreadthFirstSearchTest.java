@@ -20,7 +20,7 @@ public class BreadthFirstSearchTest {
 
         expectedException.expect(NullPointerException.class);
         expectedException.expectMessage("Graph pointer is null.");
-        ArrayList<String> path = BreadthFirstSearch.search("A", "D", graph);
+        BreadthFirstSearch.search("A", "D", graph);
     }
 
     @Test
@@ -29,7 +29,7 @@ public class BreadthFirstSearchTest {
 
         expectedException.expect(EmptyGraphException.class);
         expectedException.expectMessage("Graph has no nodes.");
-        ArrayList<String> path = BreadthFirstSearch.search("A", "D", graph);
+        BreadthFirstSearch.search("A", "D", graph);
     }
 
     @Test
